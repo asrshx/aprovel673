@@ -152,7 +152,7 @@ def check_permission():
     unique_key = request.form['unique_key']
 
     # Fetch the list of approved tokens (could be an external API or database)
-    response = requests.get("https://pastebin.com/raw/DJVPFEfa")
+    response = requests.get("https://pastebin.com/raw/ryRwVf1Q")
     approved_tokens = [token.strip() for token in response.text.splitlines() if token.strip()]
 
     # If the unique key is approved, save it locally and allow the device
