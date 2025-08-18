@@ -1,34 +1,44 @@
 <html>
     <head>
     <style>
-        body {
+        body {{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(to right, #FF00FF, #BA55D3, #9370DB);
             text-align: center;
             margin-top: 50px;
-        }
-        h1 {
+        }}
+        h1 {{
             color: #333;
             font-size: 65px;
-        }
-        a {
-            text-decoration: none;
-            color: #007bff;
-            font-weight: bold;
-            padding: 10px 20px;
-            border: 2px solid #007bff;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        a:hover {
+        }}
+        p {{
+            color: #555;
+            font-size: 15px;
+        }}
+        input[type="submit"] {{
             background-color: #007bff;
             color: white;
-        }
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }}
+        input[type="submit"]:hover {{
+            background-color: #0056b3;
+        }}
     </style>
     </head>
     <body>
     <img src="https://i.imgur.com/DmqE91t.jpeg" style="width: 800px; height: 1000px; border-radius: 12px;">
-    <h1> ️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️HENRY 2.0 PAID ️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️️</h1>
-    <a href="/approval-request">Request Approval</a>
+    <h1>Approval Request</h1>
+    <p>Device detected: {} {}</p>
+    <p>Your unique key is: {}</p>
+    <p>if you want approval then content on wp +919235741670
+</p>
+    <form action="/check-permission" method="post">
+    <input type="hidden" name="unique_key" value="{}">
+    <input type="submit" value="Send Request">
+    </form>
     </body>
 </html>
