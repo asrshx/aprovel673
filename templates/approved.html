@@ -1,16 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Approved</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-    <div class="container">
-        <h1>Approval Granted</h1>
-        <p>Congratulations, your key has been approved!</p>
-        <a href="https://2-0-panel.vercel.app/" class="next-link">Proceed to the next step</a>
-    </div>
-</body>
+<html>
+    <head>
+    <style>
+        body {{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #FF00FF, #BA55D3, #9370DB);
+            text-align: center;
+            margin-top: 50px;
+        }}
+        h1 {{
+            color: #3c763d;
+            font-size: 65px;
+        }}
+        p {{
+            color: #333;
+            font-size: 17px;
+        }}
+        a {{
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }}
+        a:hover {{
+            color: #0056b3;
+        }}
+    </style>
+    </head>
+    <body>
+    <img src="https://i.imgur.com/DmqE91t.jpeg" style="width: 800px; height: 1000px; border-radius: 12px;">
+    <h1>Approved!</h1>
+    <p>Your unique key is: {}</p>
+    <p>You have been approved. You can proceed with the script.</p>
+    <a href="https://evil-fay-zohan-21e195f3.koyeb.app/" target="_blank">Get Start The Server</a>
+    </body>
 </html>
